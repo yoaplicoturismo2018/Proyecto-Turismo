@@ -1,0 +1,12 @@
+<section class="trabajos">
+  <div class="contenedor">
+      <h3 class="titulo">Lugares Turisticos en Bolivia</h3>
+      <div class="contenedor-trabajos">          
+          <article class="trabajo" *ngFor="let departamento of departamentos">
+            <app-card-departamento [departamento]="departamento" (quieroHermano)="quieroHermano($event)"></app-card-departamento> 
+          </article>
+      </div>
+  </div>
+
+  <button (click)="addDepa()">Agregar</button>
+</section>
